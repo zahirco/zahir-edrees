@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dr. Zahir Edrees | Computer Engineering & AI Researcher</title>
+
+    <meta name="description"
+          content="Academic and professional profile of Dr. Zahir Edrees, Computer Engineering researcher, AI specialist, academic leader and software engineering expert.">
+
+    <meta name="author" content="Dr. Zahir Edrees">
+
+    <style>
+        :root {
+            --primary: #0b3d91;
+            --primary-dark: #06275e;
+            --secondary: #1d70b8;
+            --accent: #00a6d6;
+            --dark: #172033;
+            --text: #374151;
+            --light: #f5f8fc;
+            --white: #ffffff;
+            --border: #e3e8ef;
+            --shadow: 0 10px 30px rgba(15, 45, 85, 0.10);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--light);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* NAVIGATION */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #344054;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* HERO */
+
+        .hero {
+            background:
+                linear-gradient(135deg, rgba(6,39,94,0.97), rgba(11,61,145,0.93)),
+                radial-gradient(circle at top right, #00a6d6, transparent 35%);
+            color: white;
+            padding: 90px 25px;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .profile-photo {
+            width: 270px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid rgba(255,255,255,0.25);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            margin: auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            line-height: 1.1;
+            margin-bottom: 12px;
+        }
+
+        .hero h2 {
+            font-size: 1.35rem;
+            font-weight: 400;
+            color: #cfe9ff;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            max-width: 800px;
+            color: #e6f2ff;
+            font-size: 1.05rem;
+            margin-bottom: 28px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255,255,255,0.5);
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* MAIN */
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 25px;
+        }
+
+        section {
+            margin-bottom: 70px;
+            scroll-margin-top: 90px;
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .section-title .line {
+            width: 55px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 10px;
+        }
+
+        /* PROFILE */
+
+        .profile-box {
+            background: white;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            font-size: 1.05rem;
+        }
+
+        /* CARDS */
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(15,45,85,0.14);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .card h4 {
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+
+        .date {
+            display: inline-block;
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+
+        /* EDUCATION */
+
+        .timeline {
+            position: relative;
+            margin-left: 15px;
+            padding-left: 35px;
+            border-left: 3px solid #dbe7f5;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 35px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -44px;
+            top: 6px;
+            width: 14px;
+            height: 14px;
+            background: var(--accent);
+            border: 4px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 2px var(--accent);
+        }
+
+        .timeline-item h3 {
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        /* LISTS */
+
+        ul.clean {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.clean li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 9px;
+        }
+
+        ul.clean li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* TAGS */
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            padding: 8px 14px;
+            border-radius: 50px;
+            background: #eaf4ff;
+            color: var(--primary);
+            border: 1px solid #d3e7fa;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* SKILLS */
+
+        .skill-group {
+            margin-bottom: 25px;
+        }
+
+        .skill-group h3 {
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+
+        /* PUBLICATIONS */
+
+        .publication {
+            background: white;
+            padding: 25px;
+            border-left: 5px solid var(--accent);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .publication-number {
+            color: var(--accent);
+            font-weight: 800;
+            margin-right: 7px;
+        }
+
+        /* CONTACT */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 14px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+
+        .contact-icon {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-card h3 {
+            color: var(--primary);
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .contact-card p {
+            font-size: 0.85rem;
+            word-break: break-word;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: var(--dark);
+            color: #cbd5e1;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        .footer-links {
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        .footer-links a {
+            color: #8fdcff;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .profile-photo {
+                width: 210px;
+                height: 210px;
+            }
+
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+
+            main {
+                padding: 45px 18px;
+            }
+
+            .profile-box,
+            .card {
+                padding: 22px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* PRINT */
+
+        @media print {
+            header,
+            .hero-buttons,
+            footer {
+                display: none;
+            }
+
+            body {
+                background: white;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            section {
+                margin-bottom: 35px;
+            }
+
+            .card,
+            .profile-box,
+            .publication {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav class="nav">
+        <div class="logo">
+            Dr. Zahir <span>Edrees</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-container">
+
+        <div>
+            <img
+                src="zahir_newprofile.png"
+                alt="Dr. Zahir Edrees"
+                class="profile-photo">
+        </div>
+
+        <div>
+
+            <h1>Dr. Zahir Edrees</h1>
+
+            <h2>
+                Computer Engineering • Artificial Intelligence •
+                Software Engineering • Data Science
+            </h2>
+
+            <p class="hero-description">
+                Academic, researcher and higher education leader specializing
+                in Artificial Intelligence, Machine Learning, Natural Language
+                Processing, Information Retrieval, Software Engineering and
+                Digital Transformation.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#contact" class="btn btn-primary">
+                    Contact Me
+                </a>
+
+                <a href="#publications" class="btn btn-outline">
+                    View Publications
+                </a>
+
+                <!-- Replace cv.pdf with your actual CV PDF -->
+                <a href="https://drive.google.com/file/d/1mByl5i_09O_O2el4Z60Ypwm18lESzF2A/view?usp=drive_link" class="btn btn-outline" download>
+                    Download CV
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<main>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="section-title">
+        <h2>Professional Profile</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="profile-box">
+
+        <p>
+            Dr. Zahir Edrees is an accomplished academic, researcher and
+            higher education leader with extensive expertise in Software
+            Engineering, Artificial Intelligence, Data Science, Natural
+            Language Processing, Information Retrieval and Machine Learning.
+        </p>
+
+        <br>
+
+        <p>
+            He holds a Ph.D. in Computer Engineering and has significant
+            experience in teaching, curriculum development, scientific
+            research, academic administration and digital transformation
+            initiatives.
+        </p>
+
+        <br>
+
+        <p>
+            His research interests span Generative AI, Large Language Models,
+            intelligent information retrieval, healthcare informatics,
+            educational technology and intelligent decision-support systems.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+    <div class="section-title">
+        <h2>Education</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <span class="date">2025</span>
+
+            <h3>Doctor of Philosophy (Ph.D.) in Computer Engineering</h3>
+
+            <p>
+                Karabük University, Türkiye
+            </p>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <span class="date">2014</span>
+
+            <h3>Master of Software Engineering (M.Sc.)</h3>
+
+            <p>
+                University of Khartoum, Sudan
+            </p>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <span class="date">2010</span>
+
+            <h3>Bachelor of Science in Computer and Information Systems</h3>
+
+            <p>
+                Sudan University of Science and Technology, Sudan
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+    <div class="section-title">
+        <h2>Academic & Professional Experience</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="grid">
+
+        <article class="card">
+
+            <span class="date">2024 – Present</span>
+
+            <h3>
+                Head, Software Engineering Department
+            </h3>
+
+            <h4>
+                International Science and Technology University
+                — Warsaw, Poland
+            </h4>
+
+            <br>
+
+            <ul class="clean">
+
+                <li>Academic leadership and strategic planning.</li>
+
+                <li>Curriculum design and accreditation activities.</li>
+
+                <li>Faculty supervision and mentoring.</li>
+
+                <li>Research and innovation initiatives.</li>
+
+                <li>Industry and international collaboration.</li>
+
+            </ul>
+
+        </article>
+
+
+        <article class="card">
+
+            <span class="date">2011 – 2025</span>
+
+            <h3>
+                Lecturer & Teaching Assistant
+            </h3>
+
+            <h4>
+                Various Universities, Khartoum, Sudan
+            </h4>
+
+            <br>
+
+            <p>
+                Teaching undergraduate and postgraduate courses,
+                supervising graduation projects and research activities,
+                and participating in curriculum development and academic
+                quality initiatives.
+            </p>
+
+            <br>
+
+            <strong>Courses taught:</strong>
+
+            <div class="tags" style="margin-top:12px">
+
+                <span class="tag">Artificial Intelligence</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Software Engineering</span>
+                <span class="tag">Data Science</span>
+                <span class="tag">Databases</span>
+                <span class="tag">Programming</span>
+                <span class="tag">Information Retrieval</span>
+                <span class="tag">NLP</span>
+                <span class="tag">Computer Networks</span>
+                <span class="tag">Research Methodology</span>
+
+            </div>
+
+        </article>
+
+
+        <article class="card">
+
+            <span class="date">May 2011 – June 2014</span>
+
+            <h3>
+                System Analyst & Software Developer
+            </h3>
+
+            <h4>
+                Ministry of Human Resource Development and Labour, Sudan
+            </h4>
+
+            <br>
+
+            <ul class="clean">
+
+                <li>Systems analysis and software development.</li>
+
+                <li>Database design and management.</li>
+
+                <li>Requirements gathering.</li>
+
+                <li>Business process analysis.</li>
+
+                <li>Development of information systems supporting
+                    government services.</li>
+
+            </ul>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- RESEARCH -->
+
+<section id="research">
+
+    <div class="section-title">
+        <h2>Research Interests</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="profile-box">
+
+        <div class="tags">
+
+            <span class="tag">Artificial Intelligence</span>
+            <span class="tag">Generative AI</span>
+            <span class="tag">Large Language Models</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Natural Language Processing</span>
+            <span class="tag">Information Retrieval</span>
+            <span class="tag">Data Science</span>
+            <span class="tag">Healthcare Informatics</span>
+            <span class="tag">Educational Technology</span>
+            <span class="tag">Decision Support Systems</span>
+            <span class="tag">Digital Transformation</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ADMINISTRATIVE -->
+
+<section>
+
+    <div class="section-title">
+        <h2>Administrative Experience</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Academic Leadership</h3>
+            <ul class="clean">
+                <li>Head of Software Engineering Department</li>
+                <li>Academic Program Development Coordinator</li>
+                <li>Research and Quality Assurance Committee Member</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Academic Service</h3>
+            <ul class="clean">
+                <li>Graduation Projects Supervisor</li>
+                <li>Curriculum Development Committee Member</li>
+                <li>Faculty mentoring and academic supervision</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RESEARCH PROJECTS -->
+
+<section>
+
+    <div class="section-title">
+        <h2>Research Projects</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="grid">
+
+        <article class="card">
+
+            <h3>AI-Based Bone Cancer Detection System</h3>
+
+            <p>
+                Development of intelligent diagnostic models for bone cancer
+                classification using deep learning.
+            </p>
+
+        </article>
+
+        <article class="card">
+
+            <h3>Predictive Analytics in Healthcare</h3>
+
+            <p>
+                Application of machine learning techniques for disease
+                prediction and healthcare decision support.
+            </p>
+
+        </article>
+
+        <article class="card">
+
+            <h3>Large Language Models in Education</h3>
+
+            <p>
+                Research on LLM applications in teaching, learning and
+                academic assessment.
+            </p>
+
+        </article>
+
+        <article class="card">
+
+            <h3>Intelligent Information Retrieval Systems</h3>
+
+            <p>
+                Development of semantic search and knowledge extraction
+                systems.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- EDITORIAL -->
+
+<section>
+
+    <div class="section-title">
+        <h2>Editorial & Scientific Activities</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h3>Editor-in-Chief</h3>
+
+            <p>
+                <strong>
+                    AI and Intelligent Systems:
+                    Engineering, Medicine & Society (AIISEMS)
+                </strong>
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Editorial Board Member</h3>
+
+            <ul class="clean">
+
+                <li>Engineering: Open Access</li>
+
+                <li>Journal of Future Artificial Intelligence
+                    and Technologies</li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Reviewer</h3>
+
+            <ul class="clean">
+
+                <li>International Journal of Advanced Computer Science
+                    and Applications</li>
+
+                <li>American Journal of Information Science and Technology</li>
+
+                <li>Computing Journal</li>
+
+                <li>IEEE Canadian Journal of Electrical and Computer Engineering</li>
+
+                <li>Turkish Journal of Electrical Engineering
+                    & Computer Sciences</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PUBLICATIONS -->
+
+<section id="publications">
+
+    <div class="section-title">
+        <h2>Selected Research Publications</h2>
+        <div class="line"></div>
+    </div>
+
+
+    <article class="publication">
+
+        <span class="publication-number">01</span>
+
+        <strong>
+            Optimizing Text Summarization with Sentence Clustering
+            and Natural Language Processing
+        </strong>
+
+        <p>
+            International Journal of Advanced Computer Science and
+            Applications (IJACSA), 2024
+        </p>
+
+    </article>
+
+
+    <article class="publication">
+
+        <span class="publication-number">02</span>
+
+        <strong>
+            A Novel Centrality-Driven Clustering Approach for Information
+            Retrieval and Question Answering
+        </strong>
+
+        <p>
+            8th International Artificial Intelligence and Data Processing
+            Symposium, 2024
+        </p>
+
+    </article>
+
+
+    <article class="publication">
+
+        <span class="publication-number">03</span>
+
+        <strong>
+            Hybrid Method to Enhance Effectiveness and Efficiency for
+            Information Retrieval in Web Search Engines
+        </strong>
+
+        <p>
+            Research Square, 2024
+        </p>
+
+    </article>
+
+
+    <article class="publication">
+
+        <span class="publication-number">04</span>
+
+        <strong>
+            Network Analysis of the Stack Overflow Tags
+        </strong>
+
+        <p>
+            International Archives of the Photogrammetry, Remote Sensing
+            and Spatial Information Sciences, 2020
+        </p>
+
+    </article>
+
+
+    <article class="publication">
+
+        <span class="publication-number">05</span>
+
+        <strong>
+            An Overview of Blockchain Technology in Government Sectors:
+            Use Cases, Benefits, and Challenges
+        </strong>
+
+        <p>
+            Global Scientific Journal, 2019
+        </p>
+
+    </article>
+
+</section>
+
+
+<!-- TRAINING -->
+
+<section>
+
+    <div class="section-title">
+        <h2>Training & Professional Development</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="card">
+
+        <p>
+            Delivered and designed professional training programs in:
+        </p>
+
+        <br>
+
+        <div class="tags">
+
+            <span class="tag">Artificial Intelligence</span>
+            <span class="tag">Data Science</span>
+            <span class="tag">Generative AI</span>
+            <span class="tag">Software Engineering</span>
+            <span class="tag">Java Programming</span>
+            <span class="tag">Research Methodology</span>
+            <span class="tag">Digital Transformation</span>
+            <span class="tag">Data Analytics</span>
+            <span class="tag">Data Visualization</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+    <div class="section-title">
+        <h2>Technical Skills</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <div class="skill-group">
+
+                <h3>Programming Languages</h3>
+
+                <div class="tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">SQL</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="skill-group">
+
+                <h3>AI & Data Science</h3>
+
+                <div class="tags">
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">Scikit-Learn</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="skill-group">
+
+                <h3>Databases</h3>
+
+                <div class="tags">
+                    <span class="tag">MySQL</span>
+                    <span class="tag">SQL Server</span>
+                    <span class="tag">PostgreSQL</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="skill-group">
+
+                <h3>Development Tools</h3>
+
+                <div class="tags">
+                    <span class="tag">GitHub</span>
+                    <span class="tag">Visual Studio Code</span>
+                    <span class="tag">IntelliJ IDEA</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="skill-group">
+
+                <h3>Cloud & Emerging Technologies</h3>
+
+                <div class="tags">
+                    <span class="tag">Cloud Computing</span>
+                    <span class="tag">Big Data Analytics</span>
+                    <span class="tag">Generative AI Platforms</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LANGUAGES -->
+
+<section>
+
+    <div class="section-title">
+        <h2>Languages</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Arabic</h3>
+            <p>Native</p>
+        </div>
+
+        <div class="card">
+            <h3>English</h3>
+            <p>Professional Proficiency</p>
+        </div>
+
+        <div class="card">
+            <h3>Turkish</h3>
+            <p>Working Proficiency</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- AWARDS -->
+
+<section>
+
+    <div class="section-title">
+        <h2>Awards & Achievements</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="card">
+
+        <ul class="clean">
+
+            <li>Academic Leadership Recognition</li>
+
+            <li>Research Excellence Awards</li>
+
+            <li>Outstanding Teaching Contributions</li>
+
+            <li>International Scientific Reviewer Recognition</li>
+
+            <li>Published multiple papers in internationally recognized
+                journals and conferences.</li>
+
+            <li>Designed and implemented advanced models integrating
+                clustering and NLP for summarization.</li>
+
+            <li>Developed a hybrid approach for enhancing
+                information retrieval.</li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- PROFESSIONAL LINKS -->
+
+<section>
+
+    <div class="section-title">
+        <h2>Academic Profiles</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h3>LinkedIn</h3>
+
+            <p>
+                Professional networking and career profile.
+            </p>
+
+            <br>
+
+            <a
+                href="https://www.linkedin.com/in/zahir-edrees"
+                target="_blank"
+                class="btn btn-primary">
+                Visit LinkedIn
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>ORCID</h3>
+
+            <p>
+                Researcher identification and publication record.
+            </p>
+
+            <br>
+
+            <a
+                href="https://orcid.org/0000-0001-7168-2297"
+                target="_blank"
+                class="btn btn-primary">
+                Visit ORCID
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>SciProfiles</h3>
+
+            <p>
+                Scientific research and publication profile.
+            </p>
+
+            <br>
+
+            <a
+                href="https://sciprofiles.com/profile/zahiredrees"
+                target="_blank"
+                class="btn btn-primary">
+                View Profile
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <div class="section-title">
+        <h2>Contact</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <div class="contact-icon">✉️</div>
+
+            <h3>Email</h3>
+
+            <p>
+                zahir.edrees@istu.edu.pl
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">📱</div>
+
+            <h3>Phone</h3>
+
+            <p>
+                +90 536 911 9205
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">📍</div>
+
+            <h3>Residence</h3>
+
+            <p>
+                Istanbul, Türkiye
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">🌍</div>
+
+            <h3>Nationality</h3>
+
+            <p>
+                Sudanese
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 <strong>Dr. Zahir Edrees</strong>.
+        Academic & Professional Profile.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
